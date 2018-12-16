@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <SwitchPreference
+        android:key="colorMode"
+        android:title="Registro Colorido"/>
+
+    <PreferenceCategory
+        android:title="DADO DE DUAS FACES"
+        android:layout="@layout/preference_cat_title">
+        <CheckBoxPreference
+            android:key="Box1"
+            android:title="    Modo 'Sim ou Não'"
+            android:defaultValue="true"
+            android:textSize="12dp"
+            android:padding="0dp"/>
+        <CheckBoxPreference
+            android:key="Box2"
+            android:title="    Modo 'Cara ou Coroa'"
+            android:defaultValue="false"
+            android:textSize="12dp"
+            android:padding="0dp"/>
+        <CheckBoxPreference
+            android:key="Box3"
+            android:title="    Modo Binário"
+            android:defaultValue="false"
+            android:textSize="12dp"
+            android:padding="0dp"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
